@@ -1,0 +1,104 @@
+[
+    {
+        "id": "1",
+        "estate_title": "Luxury Villa in Beverly Hills",
+        "segment_name": "Premium",
+        "description": "A stunning villa with panoramic views, modern design, and state-of-the-art facilities.",
+        "price": "$10,000,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "Beverly Hills, CA",
+        "facilities": [
+            "Living Room",
+            "Swimming Pool",
+            "Kitchen",
+            "Home Theater",
+            "Gym"
+        ],
+        "image_url": "https://i.ibb.co/34qMDtw/cozy-living-room-interior-with-panoramic-window.jpg"
+    },
+    {
+        "id": "2",
+        "estate_title": "Modern Apartment in New York",
+        "segment_name": "Urban",
+        "description": "A chic apartment located in the heart of New York City with easy access to amenities.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Manhattan, NY",
+        "facilities": [
+            "Living Room",
+            "Kitchen",
+            "Balcony",
+            "Gym"
+        ],
+        "image_url": "https://i.ibb.co/6yMKzMJ/view-living-room.jpg"
+    },
+    {
+        "id": "3",
+        "estate_title": "Cozy Suburban Home",
+        "segment_name": "Family",
+        "description": "A cozy and spacious home perfect for families, located in a quiet neighborhood.",
+        "price": "$650,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "Austin, TX",
+        "facilities": [
+            "Living Room",
+            "Kitchen",
+            "Garden",
+            "Garage"
+        ],
+        "image_url": "https://i.ibb.co/GPvkLFj/dining-area-comfortable-studio-flat-hotel-room.jpg"
+    },
+    {
+        "id": "4",
+        "estate_title": "Beachfront Condo",
+        "segment_name": "Vacation",
+        "description": "A luxurious condo with breathtaking ocean views, perfect for a vacation retreat.",
+        "price": "$3,200,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Miami, FL",
+        "facilities": [
+            "Living Room",
+            "Swimming Pool",
+            "Kitchen",
+            "Balcony"
+        ],
+        "image_url": "https://i.ibb.co/DbJZ86Z/bangkok-thailand-august-12-2016-beautiful-luxury-living-room.jpg"
+    },
+    {
+        "id": "5",
+        "estate_title": "Downtown Loft",
+        "segment_name": "Urban",
+        "description": "A trendy loft in a historic building, featuring high ceilings and an open floor plan.",
+        "price": "$1,100,000",
+        "status": "sale",
+        "area": "1200 sq ft",
+        "location": "Chicago, IL",
+        "facilities": [
+            "Living Room",
+            "Kitchen",
+            "Rooftop Access"
+        ],
+        "image_url": "https://i.ibb.co/w62HZc6/empty-living-room-interior-with-pc-background.jpg"
+    },
+    {
+        "id": "6",
+        "estate_title": "Country Cottage",
+        "segment_name": "Rustic",
+        "description": "A charming cottage nestled in the countryside, offering peace and tranquility.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "Nashville, TN",
+        "facilities": [
+            "Living Room",
+            "Kitchen",
+            "Garden",
+            "Fireplace"
+        ],
+        "image_url": "https://i.ibb.co/BgSH5Wq/modern-styled-small-entryway.jpg"
+    }
+]
