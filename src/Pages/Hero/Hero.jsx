@@ -1,9 +1,11 @@
 import { useCallback, useState } from "react";
+import slide1 from "../../assets/slide1.jpg";
+import slide2 from "../../assets/slide2.jpg";
+import slide3 from "../../assets/slide3.jpg";
 
  const Hero = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const carouselImages = ['https://i.ibb.co/34qMDtw/cozy-living-room-interior-with-panoramic-window.jpg','https://i.ibb.co/GPvkLFj/dining-area-comfortable-studio-flat-hotel-room.jpg',
-    'https://i.ibb.co/6yMKzMJ/view-living-room.jpg'];
+  const carouselImages = [slide1, slide2, slide3];
   const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? carouselImages.length - 1 : currentSlider - 1);
   const nextSlider = useCallback(() => setCurrentSlider((currentSlider) => currentSlider === carouselImages.length - 1 ? 0 : currentSlider + 1), [carouselImages.length]);
 
