@@ -8,10 +8,6 @@ import slide3 from "../../assets/slide3.jpg";
   const carouselImages = [slide1, slide2, slide3];
   const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? carouselImages.length - 1 : currentSlider - 1);
   const nextSlider = useCallback(() => setCurrentSlider((currentSlider) => currentSlider === carouselImages.length - 1 ? 0 : currentSlider + 1), [carouselImages.length]);
-
-  // if you don't want to change the slider automatically then you can just remove the useEffect
-  
-
   return (
       <div className=" w-11/12 mx-auto rounded-3xl h-auto relative overflow-hidden">
           {/* arrow left */}

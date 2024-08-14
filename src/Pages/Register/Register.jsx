@@ -16,7 +16,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className="my-5">
             <div className="mx-auto w-full max-w-md space-y-4 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
                 <h1 className="text-3xl font-semibold">Resister</h1>
                 <form onSubmit={handleSubmit} className="space-y-6">

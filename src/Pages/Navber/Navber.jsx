@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Auth/AuthProvider/AuthProvider";
 
 const Navber = () => {
+    const { userInfo, logOut } = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut();
+    }
     const items = <>
         <Link to='/'><button className="button">Home</button></Link>
         <Link to='/updateUser'><button className="button">Update User</button></Link>
@@ -40,14 +46,23 @@ const Navber = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <Link to='/register'><button className="button">Resister</button></Link>
-                    <Link to='/Sign In'><button className="button">Sign In</button></Link>
-                    <Link to='/Sign Out'><button className="button">Sign Out</button></Link>
-                    <div className="w-10 rounded-full">
-                        <img className="rounded-full"
-                            alt="Tailwind CSS Navbar component"
-                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                    </div>
+                    {
+                        userInfo ? <>
+                            <button onClick={handleLogOut} className="button">Sign Out</button>
+                            <div className="w-10 rounded-full">
+                                <img className="rounded-full"
+                                    alt="Tailwind CSS Navbar component"
+                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            </div>
+                        </>
+                            :
+                            <>
+                                <Link to='/register'><button className="button">Resister</button></Link>
+                                <Link to='/SignIn'><button className="button">Sign In</button></Link>
+                            </>
+                    }
+
+
                 </div>
             </div>
         </div>
