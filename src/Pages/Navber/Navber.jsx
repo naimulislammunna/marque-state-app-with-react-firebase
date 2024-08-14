@@ -10,7 +10,7 @@ const Navber = () => {
     const items = <>
         <Link to='/'><button className="button">Home</button></Link>
         <Link to='/updateUser'><button className="button">Update User</button></Link>
-        <Link to='/userProfile'><button className="button">User Profile</button></Link>
+        <Link to='/ourProfile'><button className="button">User Profile</button></Link>
 
     </>
     return (
@@ -38,7 +38,7 @@ const Navber = () => {
                             {items}
                         </ul>
                     </div>
-                    <a className=" text-xl">Marque <span>State</span></a>
+                    <a className=" text-3xl">Marque <span className="text-blue-800">State</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-3">
@@ -49,10 +49,11 @@ const Navber = () => {
                     {
                         userInfo ? <>
                             <button onClick={handleLogOut} className="button">Sign Out</button>
-                            <div className="w-10 rounded-full">
+                            <h3>{userInfo.displayName}</h3>
+                            <div className="w-10">
                                 <img className="rounded-full"
                                     alt="Tailwind CSS Navbar component"
-                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                    src={userInfo.photoURL} />
                             </div>
                         </>
                             :

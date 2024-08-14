@@ -7,7 +7,7 @@ const PrivetRoute = ({children}) => {
     if(userinfo){
         return children;
     }
-    return <Navigate to='/'></Navigate>
+    return <Navigate to='/signIn'></Navigate>
 };
 
 export default PrivetRoute;

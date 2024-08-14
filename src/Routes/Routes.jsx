@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home";
 import Register from "../Pages/Register/Register";
 import SignIn from "../Pages/SignIn/SignIn";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PrivetRoute from "./PrivetRoute";
+import OurProfile from "../Pages/OurProfile/OurProfile";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/signIn',
                 element:<SignIn></SignIn>
+            },
+            {
+                path: '/ourProfile',
+                element: <PrivetRoute><OurProfile></OurProfile></PrivetRoute>
             }
         ]
     }
