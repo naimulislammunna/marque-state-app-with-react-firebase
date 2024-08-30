@@ -10,7 +10,7 @@ const Navber = () => {
     const items = <>
         <Link to='/'><button className="button">Home</button></Link>
         <Link to='/updateUser'><button className="button">Update User</button></Link>
-        <Link to='/ourProfile'><button className="button">User Profile</button></Link>
+        <Link to='/profile'><button className="button">User Profile</button></Link>
 
     </>
     return (
@@ -38,7 +38,9 @@ const Navber = () => {
                             {items}
                         </ul>
                     </div>
-                    <a className=" text-3xl">Marque <span className="text-blue-800">State</span></a>
+                    <Link to='/'>
+                        <a className=" text-3xl">Marque <span className="text-blue-800">State</span></a>
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-3">

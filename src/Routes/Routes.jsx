@@ -6,6 +6,7 @@ import SignIn from "../Pages/SignIn/SignIn";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import PrivetRoute from "./PrivetRoute";
 import OurProfile from "../Pages/OurProfile/OurProfile";
+import ViewProperty from "../Pages/Apartments/ViewProperty";
 
 const router = createBrowserRouter([
     {
@@ -22,12 +23,17 @@ const router = createBrowserRouter([
                 element:<Register></Register>
             },
             {
+                path: '/profile',
+                element: <PrivetRoute><OurProfile></OurProfile></PrivetRoute>
+            },
+            {
                 path: '/signIn',
                 element:<SignIn></SignIn>
             },
             {
-                path: '/ourProfile',
-                element: <PrivetRoute><OurProfile></OurProfile></PrivetRoute>
+                path: '/viewProperty/:idx',
+                element:<PrivetRoute><ViewProperty></ViewProperty></PrivetRoute>,
+                loader: () => fetch('../../public/public.json')
             }
         ]
     }

@@ -11,7 +11,7 @@ const Apartments = () => {
     }, [])
     return (
         <div>
-            <h1>Our Apartment</h1>
+            <h1 className="text-center text-3xl my-5">Our Apartment</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 home-container">
                 {
                     apartmentInfo.map((apartment, idx) => <Apartment key={idx} apartment={apartment}></Apartment>)

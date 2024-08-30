@@ -6,7 +6,7 @@
         "description": "A stunning villa with panoramic views, modern design, and state-of-the-art facilities.",
         "price": "$10,000,000",
         "status": "sale",
-        "area": "5000 sq ft",
+        "area": "5000 sq",
         "location": "Beverly Hills, CA",
         "facilities": [
             "Living Room",
@@ -15,7 +15,7 @@
             "Home Theater",
             "Gym"
         ],
-        "image_url": "https://i.ibb.co/34qMDtw/cozy-living-room-interior-with-panoramic-window.jpg"
+        "image_url": "https://i.postimg.cc/DwqRbSX9/slide1.jpg" 
     },
     {
         "id": "2",
@@ -32,7 +32,7 @@
             "Balcony",
             "Gym"
         ],
-        "image_url": "https://i.ibb.co/6yMKzMJ/view-living-room.jpg"
+        "image_url": "https://i.postimg.cc/HLzKBF33/slide2.jpg" 
     },
     {
         "id": "3",
@@ -49,7 +49,7 @@
             "Garden",
             "Garage"
         ],
-        "image_url": "https://i.ibb.co/GPvkLFj/dining-area-comfortable-studio-flat-hotel-room.jpg"
+        "image_url": "https://i.postimg.cc/pdR4QPQp/slide3.jpg" 
     },
     {
         "id": "4",
@@ -58,7 +58,7 @@
         "description": "A luxurious condo with breathtaking ocean views, perfect for a vacation retreat.",
         "price": "$3,200,000",
         "status": "sale",
-        "area": "1800 sq ft",
+        "area": "1800 sq",
         "location": "Miami, FL",
         "facilities": [
             "Living Room",
@@ -66,7 +66,7 @@
             "Kitchen",
             "Balcony"
         ],
-        "image_url": "https://i.ibb.co/DbJZ86Z/bangkok-thailand-august-12-2016-beautiful-luxury-living-room.jpg"
+        "image_url": "https://i.postimg.cc/kgbRNmM3/bangkok-thailand-august-12-2016-beautiful-luxury-living-room.jpg" 
     },
     {
         "id": "5",
@@ -82,7 +82,7 @@
             "Kitchen",
             "Rooftop Access"
         ],
-        "image_url": "https://i.ibb.co/w62HZc6/empty-living-room-interior-with-pc-background.jpg"
+        "image_url": "https://i.postimg.cc/s2CQwN1B/empty-living-room-interior-with-pc-background.jpg" 
     },
     {
         "id": "6",
@@ -99,6 +99,6 @@
             "Garden",
             "Fireplace"
         ],
-        "image_url": "https://i.ibb.co/BgSH5Wq/modern-styled-small-entryway.jpg"
+        "image_url": "https://i.postimg.cc/yY5SSdHy/modern-styled-small-entryway.jpg" 
     }
 ]

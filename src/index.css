@@ -13,12 +13,6 @@
 body{
     max-width: 1440px;
 }
-.home{
-    width: 90%;
-    background-color: rgb(226 232 240);
-    border-radius: 20px;
-    margin: 0 auto;
-}
 .home-container{
     width: 95%;
     margin: 10px auto;

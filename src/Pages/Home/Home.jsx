@@ -1,11 +1,14 @@
 import Apartments from "../Apartments/Apartments";
 import Hero from "../Hero/Hero";
-
+import {Helmet} from "react-helmet";
 const Home = () => {
     return (
-        <div className="home py-7">
+        <div className="bg-slate-200  mx-auto py-7">
             <Hero></Hero>
-            <Apartments></Apartments>   
+            <Apartments></Apartments> 
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
         </div>
     );
 };

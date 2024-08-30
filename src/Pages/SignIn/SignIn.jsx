@@ -1,28 +1,22 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Auth/AuthProvider/AuthProvider";
 
 
 const SignIn = () => {
     const {handleSignIn, googleLogIn, githubLogIn} = useContext(AuthContext);
-
-    // onAuthStateChanged(auth, (user) => {
-    //     if(user){
-    //         console.log(user);
-    //     }
-    //     else{
-    //         console.log('nainai');
-    //     }
-    // })
+    const navigate = useNavigate();
+    const location = useLocation();
+    
 
     const handleGoogleLogIn = () =>{
         googleLogIn()
-        .then(res => console.log("g log in", res))
+        .then(() => navigate(location.state))
         .catch(err => console.log(err))
     }
     const handleGithubLogIn = () =>{
         githubLogIn()
-        .then(res => console.log("git log in", res))
+        .then(() => navigate(location.state))
         .catch(err => console.log(err))
     }
 
@@ -32,7 +26,7 @@ const SignIn = () => {
         const password = e.target.password.value;
 
         handleSignIn(email, password)
-        .then(res => console.log("sign in ok",res))
+        .then(() => navigate(location.state))
         .catch(err => console.log(err))
     }
 
